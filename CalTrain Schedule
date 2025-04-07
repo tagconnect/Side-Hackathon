@@ -2,9 +2,9 @@
 
 universal_parameters(){
 	#APIs
-	caltrain_api_key="1a4e65dc-fd7b-44c0-a2b1-488ed804e59c"
-	gemini_key="AIzaSyAornUrFLPgMM26YEKKAMzOUKA5igEosHo"
-	BART_API_KEY="ZAXL-PQDK-996T-DWEI"
+	caltrain_api_key="key_here"
+	gemini_key="key_here"
+	BART_API_KEY="key_here"
 	
 	#setting limits
 	caltrain_api_countdown=3
