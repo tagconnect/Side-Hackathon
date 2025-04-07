@@ -1,0 +1,11 @@
+#!/bin/bash
+
+response=$(curl -s -w "%{http_code}" -o temp_output https://agent.sideinc.com/txm/api/health)
+http_code=${response: -3}
+result=$(<temp_output)
+
+if [ "$http_code" -eq 200 ]; then
+    echo "Success: $result"
+else
+    echo "Failed with HTTP code $http_code"
+fi
